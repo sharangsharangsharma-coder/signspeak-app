@@ -24,7 +24,7 @@ body { overscroll-behavior: none; -webkit-tap-highlight-color: transparent; }
   .ss-app { border-inline: 1px solid var(--color-divider); }
 }
 .ss-head { flex: none; padding: calc(var(--space-6) + env(safe-area-inset-top)) var(--space-6) 0; }
-.ss-brand { font-size: 11px; letter-spacing: .04em; margin-bottom: 2px; color: color-mix(in srgb, var(--color-text) 55%, transparent); }
+.ss-brand { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
 .ss-head-row { display: flex; align-items: center; justify-content: space-between; }
 .ss-title { font-size: 25px; margin: 0; }
 .ss-title:focus { outline: none; }
@@ -177,3 +177,9 @@ textarea.input { resize: vertical; min-height: 84px; font: inherit; }
 .ss-inputbar { display: flex; align-items: flex-end; gap: var(--space-2); }
 .ss-inputbar textarea.input { flex: 1; min-height: 44px; max-height: 96px; resize: none; padding: 11px 14px; line-height: 1.35; }
 .ss-inputbar .btn { flex: none; }
+
+/* ── logo in the header ─────────────────────────────────────────────────────────── */
+.ss-logo { height: 26px; width: auto; display: block; }
+.ss-wordmark { font-size: 17px; font-weight: 700; letter-spacing: -0.01em; line-height: 1; }
+.ss-w1 { color: #fff; }
+.ss-w2 { background: linear-gradient(90deg, #00c8ff 0%, #4b6bff 55%, #a855f7 100%); -webkit-background-clip: text; background-clip: text; color: transparent; -webkit-text-fill-color: transparent; }
