@@ -4,7 +4,7 @@
 //  • Everything else (incl. avatar/clip .glb files): stale-while-revalidate,
 //    so a clip you've viewed once keeps working offline and refreshes in the background.
 // Bump VERSION when you change the shell file list.
-const VERSION = 'signspeak-v3';
+const VERSION = 'signspeak-v4';
 
 const SHELL = [
   './',
@@ -27,6 +27,7 @@ const SHELL = [
   'icons/icon-maskable-512.png',
   'icons/apple-touch-icon.png',
   'icons/favicon-32.png',
+  'icons/logo-mark.png',
 ];
 
 self.addEventListener('install', (event) => {
