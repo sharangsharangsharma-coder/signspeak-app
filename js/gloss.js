@@ -29,9 +29,20 @@ function normalize(text) {
     .split(/\s+/)
     .filter(Boolean);
 }
-
+   // Fixed demo line, in ISL order (unconfirmed — verify with a signer).
+   const FIXED_LINES = [
+     { match: 'do your best in the competition', ids: ['competition', 'your', 'best', 'do'] },
+   ];
 // isAvailable(id) → true when a clip file exists for that sign.
 export function toGloss(text, lexicon, isAvailable) {
+       const normalized = normalize(text).join(' ');
+     for (const line of FIXED_LINES) {
+       if (normalized === line.match) {
+         const ids = line.ids.filter(isAvailable);
+         const missing = line.ids.filter((id) => !isAvailable(id));
+         return { ids, missing };
+       }
+     }
   const tokens = normalize(text);
   const ids = [];
   const missing = [];
