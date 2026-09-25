@@ -30,17 +30,21 @@ export const AVATAR = {
 // aliases  → extra words Translate should map to this sign
 // clip     → (optional) name of the animation inside the .glb; default = first one
 export const SIGNS = [
-  { id: 'summer',   en: 'Summer',    tag: 'Seasons', file: 'assets/clips/summer.glb' },
-  { id: 'hello',    en: 'Hello',     tag: 'Greetings', aliases: ['hi'] },
-  { id: 'thankyou', en: 'Thank you', tag: 'Greetings', aliases: ['thanks'] },
-  { id: 'please',   en: 'Please',    tag: 'Greetings' },
-  { id: 'yes',      en: 'Yes',       tag: 'Basics' },
-  { id: 'no',       en: 'No',        tag: 'Basics' },
-  { id: 'help',     en: 'Help',      tag: 'Basics' },
-  { id: 'water',    en: 'Water',     tag: 'Daily life' },
-  { id: 'friend',   en: 'Friend',    tag: 'People' },
-  { id: 'family',   en: 'Family',    tag: 'People' },
-  { id: 'love',     en: 'Love',      tag: 'Emotions' },
+  { id: 'summer',      en: 'Summer',      tag: 'Seasons', file: 'assets/clips/summer.glb' },
+  { id: 'do',          en: 'Do',          tag: 'Demo line', file: 'assets/clips/do.glb' },
+  { id: 'your',        en: 'Your',        tag: 'Demo line', file: 'assets/clips/your.glb' },
+  { id: 'best',        en: 'Best',        tag: 'Demo line', file: 'assets/clips/best.glb' },
+  { id: 'competition', en: 'Competition', tag: 'Demo line', file: 'assets/clips/competition.glb' },
+  { id: 'hello',       en: 'Hello',       tag: 'Greetings', aliases: ['hi'] },
+  { id: 'thankyou',    en: 'Thank you',   tag: 'Greetings', aliases: ['thanks'] },
+  { id: 'please',      en: 'Please',      tag: 'Greetings' },
+  { id: 'yes',         en: 'Yes',         tag: 'Basics' },
+  { id: 'no',          en: 'No',          tag: 'Basics' },
+  { id: 'help',        en: 'Help',        tag: 'Basics' },
+  { id: 'water',       en: 'Water',       tag: 'Daily life' },
+  { id: 'friend',      en: 'Friend',      tag: 'People' },
+  { id: 'family',      en: 'Family',      tag: 'People' },
+  { id: 'love',        en: 'Love',        tag: 'Emotions' },
 ];
 
 export const clipUrl = (sign) => sign.file || null;
